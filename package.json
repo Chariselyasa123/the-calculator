@@ -1,0 +1,26 @@
+{
+  "name": "the-calculator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  },
+  "workspaces": [
+    "*"
+  ],
+  "scripts": {
+    "client-install": "yarn workspace @the-calculator/client install",
+    "server-install": "yarn workspace @the-calculator/server install",
+    "client": "yarn workspace @the-calculator/client dev",
+    "server": "yarn workspace @the-calculator/server serve",
+    "build-client": "yarn workspace @the-calculator/client build",
+    "build-server": "yarn workspace @the-calculator/server build",
+    "start": "concurrently --kill-others-on-fail \"yarn client\"  \"yarn server\"",
+    "start:server" : "yarn workspace @the-calculator/server start"
+  },
+  "engines": {
+    "node": "16.13.0"
+  }
+} 
