@@ -1,0 +1,50 @@
+.button {
+    align-items: center;
+    background-color: #2b2d42;
+    box-shadow:
+        5px 5px 10px 0 #31344c,
+        -5px -5px 10px 0 #252638;
+    border-radius: 20px;
+    display: flex;
+    height: 80px;
+    width: 100%;
+    justify-content: center;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all .02s ease-in-out;
+    font-family: 'Orbitron', sans-serif;
+    padding: .1rem;
+}
+
+.button:hover {
+    background-color: #242638;
+    transform: scale(1.1);
+}
+
+.button:active {
+    background-color: #1E202E;
+    transform: translateY(4px);
+}
+
+.equalSign {
+    background: #EF233C;
+    color: #fff;
+}
+
+.equalSign:hover {
+    background: #DC1128;
+}
+
+.equalSign:active {
+    background: #B70E22;
+}
+
+.power {
+    display: flex;
+}
+
+.power sup {
+    font-size: small;
+    display: flex;
+}

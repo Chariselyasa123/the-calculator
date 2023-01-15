@@ -1,0 +1,30 @@
+.buttonGroup {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.2rem;
+}
+
+.operator {
+    border: 2px solid #EF233C;
+    color: #EF233C;
+    width: 100%;
+    height: 94.5%;
+    border-radius: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.operator:hover {
+    border: 2px solid #DC1128;
+    color: #DC1128;
+}
+
+.operator:focus {
+    border: 2px solid #B70E22;
+    color: #B70E22;
+}
+
+.span2 {
+    grid-column: span 2 / span 2;
+}
